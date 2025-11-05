@@ -5,7 +5,7 @@ def calculate_sum(n):
         return None
     ts=0
     for i in range(1, n+1):
-        total_sum+=((-1)**(i + 1))*math.cos(i)
+        ts+=((-1)**(i + 1))*math.cos(i)
     return ts
 n=5
 r=calculate_sum(n)
