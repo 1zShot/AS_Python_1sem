@@ -1,14 +1,14 @@
-def product_maxelem(lst):
+def product_of_elements_right_of_max(lst):
     if not lst:
         return None
-    max_v=max(lst)
-    max_i=lst.i(max_v)
-    rightelem=lst[max_i+1:]
+    max_value = max(lst)
+    max_index = lst.index(max_value)
+    right_elements=lst[max_index+1:]
     prod=1
-    for elem in rightelem:
-        prod*=elem
-    return prod if rightelem else None
+    for element in right_elements:
+        prod*=element
+    return prod if right_elements else None
 
 lst=[3, 5, 2, 7, 4, 8, 1]
-r=product_maxelem(lst)
+r=product_of_elements_right_of_max(lst)
 print(r)
